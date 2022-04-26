@@ -1,0 +1,15 @@
+current directory: /Users/maria.stellet/Desktop/SDA_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.11.1/ext/bootsnap
+/Users/maria.stellet/.rbenv/versions/3.1.2/bin/ruby -I /Users/maria.stellet/.rbenv/versions/3.1.2/lib/ruby/site_ruby/3.1.0 -r ./siteconf20220425-64289-vhnd3l.rb extconf.rb
+creating Makefile
+
+current directory: /Users/maria.stellet/Desktop/SDA_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.11.1/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/maria.stellet/Desktop/SDA_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.11.1/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/maria.stellet/Desktop/SDA_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.11.1/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220425-64289-5gukf/bootsnap
