@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data: 2022-04-25
+  dataEntrega: 2022-04-25
+  valor: 1.5
+  status: MyString
+  belongs_to: MyString
+  Instituicao: MyString
+
+two:
+  data: 2022-04-25
+  dataEntrega: 2022-04-25
+  valor: 1.5
+  status: MyString
+  belongs_to: MyString
+  Instituicao: MyString
