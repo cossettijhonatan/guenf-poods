@@ -1,55 +1,37 @@
 class Instituicao < ApplicationRecord
     def initialize(attribute)
-        self.cnpj = attribute.cnpj
-        self.razaoSocial = attribute.razaoSocial
-        self.nomeFantasia =  attribute.nomeFantasia
-        self.endereco = attribute.endereco
-        self.telefone = attribute.telefone
-        self.mail = attribute.mail
+        super(attribute)
+        # byebug
+        @cnpj = attribute[:cnpj]
+        @razaoSocial = attribute[:razaoSocial]
+        @nomeFantasia =  attribute[:nomeFantasia]
+        @endereco = attribute[:endereco]
+        @telefone = attribute[:telefone]
+        @mail = attribute[:mail]
     end
 
-    def nomeFantasia 
-        self.nomeFantasia
+    def cnpj
+        @cnpj
     end
-
-    def nomeFantasia=(nomeFantasia)
-        self.nomeFantasia = nomeFantasia
-    end
-
-
-    def razaoSocial 
-        self.razaoSocial
-    end
-
-    def razaoSocial=(razaoSocial)
-        self.razaoSocial = razaoSocial
-    end
-
-
-    def endereco 
-        self.endereco
-    end
-
-    def endereco=(endereco)
-        self.endereco = endereco
-    end
-
-
-    def telefone 
-        self.telefone
-    end
-
-    def telefone=(telefone)
-        self.telefone = telefone
-    end
-
     
-    def mail 
-        self.mail
+    def razaoSocial
+        @razaoSocial
     end
-
-    def mail=(mail)
-        self.mail = mail
+    
+    def nomeFantasia
+        @nomeFantasia
     end
-
+    
+    def endereco
+        @endereco
+    end
+    
+    def telefone
+        @telefone
+    end
+    
+    def mail
+        @mail
+    end
+    
 end
