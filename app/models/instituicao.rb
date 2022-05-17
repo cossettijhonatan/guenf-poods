@@ -1,7 +1,6 @@
 class Instituicao < ApplicationRecord
     def initialize(attribute)
         super(attribute)
-        # byebug
         @cnpj = attribute[:cnpj]
         @razaoSocial = attribute[:razaoSocial]
         @nomeFantasia =  attribute[:nomeFantasia]
@@ -10,28 +9,52 @@ class Instituicao < ApplicationRecord
         @mail = attribute[:mail]
     end
 
-    def cnpj
+    def getCnpj
         @cnpj
     end
     
-    def razaoSocial
+    def setCnpj(cnpj)
+        @cnpj = cnpj
+    end
+
+    def getRazaoSocial
         @razaoSocial
     end
+
+    def setRazaoSocial(razaoSocial)
+        @razaoSocial = razaoSocial
+    end
     
-    def nomeFantasia
+    def getNomeFantasia
         @nomeFantasia
     end
+
+    def setNomeFantasia(nomeFantasia)
+        @nomeFantasia = nomeFantasia
+    end
     
-    def endereco
+    def getEndereco
         @endereco
     end
-    
-    def telefone
-        @telefone
+
+    def setEndereco
+        @endereco = endereco
     end
     
-    def mail
+    def setTelefone
+        @telefone
+    end
+
+    def getTelefone(telefone)
+        @telefone = telefone
+    end
+    
+    def setMail
         @mail
+    end
+
+    def getMail(mail)
+        @mail = mail
     end
     
 end
