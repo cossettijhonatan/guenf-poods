@@ -14,10 +14,10 @@ class Funcionario < ApplicationRecord
         @nome = nome
     end
 
-    def getcpf
+    def getCpf
         @cpf
     end
-    def setcpf(cpf)
+    def setCpf(cpf)
         @cpf = cpf
     end
 
