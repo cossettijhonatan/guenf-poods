@@ -2,7 +2,7 @@ class Funcionario < ApplicationRecord
     def initialize(attribute)
         super(attribute)
         @nome = attribute[:nome]
-        @CPF = attribute[:CPF]
+        @cpf = attribute[:cpf]
         @email = attribute[:email]
         @senha = attribute[:senha]
     end
@@ -14,11 +14,11 @@ class Funcionario < ApplicationRecord
         @nome = nome
     end
 
-    def getCPF
-        @CPF
+    def getcpf
+        @cpf
     end
-    def setCPF(CPF)
-        @CPF = CPF
+    def setcpf(cpf)
+        @cpf = cpf
     end
 
     def getEmail
