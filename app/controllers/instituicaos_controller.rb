@@ -46,6 +46,6 @@ class InstituicaosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def instituicao_params
-      params.require(:instituicao).permit(:nomeFantasia, :razaoSocial, :endereco, :mail, :cnpj, :telefone)
+      params.require(:instituicao).permit(:nomeFantasia, :razaoSocial, :mail, :cnpj, :telefone, :endereco, :cidade, :bairro, :cep, :uf, :numero, :complemento,)
     end
 end

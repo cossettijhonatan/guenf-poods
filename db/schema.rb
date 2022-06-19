@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_26_002632) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_31_112640) do
+  create_table "funcionarios", force: :cascade do |t|
+    t.string "nome"
+    t.string "cpf"
+    t.string "email"
+    t.string "senha"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "instituicaos", force: :cascade do |t|
     t.string "nomeFantasia"
     t.string "razaoSocial"
@@ -20,6 +29,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_26_002632) do
     t.string "telefone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "rua"
+    t.string "cidade"
+    t.string "bairro"
+    t.integer "cep"
+    t.string "uf"
+    t.integer "numero"
+    t.string "complemento"
   end
 
   create_table "pedidos", force: :cascade do |t|
@@ -37,6 +53,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_26_002632) do
     t.string "nome"
     t.integer "quantidade"
     t.float "preco"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "relatorios", force: :cascade do |t|
+    t.string "codInstituicao"
+    t.string "nomeFantasia"
+    t.string "codPedido"
+    t.date "dataPedido"
+    t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
